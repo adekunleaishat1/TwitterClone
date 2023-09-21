@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-storage.js"></script>
+    <link rel="stylesheet" href="../fontawesome-free-6.2.1-web/css/all.css">
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Document</title>
+</head>
+<body>
+    <main class="content">
+        <div class="left_con">
+            <div>
+                
+            </div>
+            <div class="inner-con">
+                <button><i class="fa fa-house"></i><p>Home</p></button>
+                <button><i class="fa-solid fa-hashtag"></i><p>Explore</p></button>
+                <button><i class="fa-regular fa-bell"></i><p>Notifications</p></button>
+                <button><i class="fa-regular fa-envelope"></i><p>Messages</p></button>
+                <button><i class="fa-solid fa-bookmark"></i><p>Bookmarks</p></button>
+                <button><i class="fa-brands fa-square-twitter"></i><p>Twitter Blue</p></button>
+                <button><i class="fa-regular fa-user"></i><p>Profile</p></button>
+                <button><i class="fa fa-circle-ellipsis"></i><p>More</p></button>
+            </div>
+            <div class="btt">
+              <button>Tweet</button>
+            </div>
+            <div class="profile">
+                <div id="pro"><p>A</p></div>
+                <div class="pro2">
+                    <p class="nam" id="name">Aishat Adekunle</p>
+                    <p id="mail">@AishatAdekunle5</p>
+                </div>
+                <div class="pro3">
+                  <i class="fa fa-ellipsis"></i>
+                </div>
+            </div>
+        </div>
+        <div class="center_con">
+            <div class="center_nav">
+                <div><h1>Home</h1></div>
+                <div class="tog">
+                  <button>for you</button>
+                  <button>following</button>
+                </div>
+            </div>
+            <div class="post">
+                <div class="wat">
+                  <div id="pro">
+                     <p>A</p>
+                  </div> 
+                  <div class="ti">
+                    <input id="title" type="text" placeholder="What's Is Happening?">
+                  </div>
+                </div>
+                <div class="med">
+                    <div class="meds">
+                        <button onclick="showimage()"><i class="fa-regular fa-image"></i>
+                            <input id="image" type="file"></button>
+                        <button><span class="material-symbols-outlined">
+                           gif_box
+                           </span></button>
+                        <button><i class="fa-thin fa-code-pull-request-draft fa-rotate-90"></i></button>
+                        <button><i class="fa-regular fa-face-smile"></i></button>
+                        <button><i class="fa-regular fa-calendar-circle-plus"></i></button>
+                        <button><i class="fa fa fa-location-dot"></i></button>
+                    </div>
+                    <button class="show" onclick="postblog(event)">Tweet</button>
+                </div>
+                <div id="cap_con">
+
+                </div>
+            </div>
+        </div>
+        <div class="right_con">
+          <div class="top-nav">
+              <div class="inp">
+                 <i class="fa fa-magnifying-glass"></i>
+                 <input type="text" placeholder="Search Twitter">
+              </div>
+          </div>
+        </div>
+    </main>
+</body>
+</html>
+<script src="blog.js"></script>
